@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Answordle",
+	"version": "0.0.1",
+	"description": "This extension displays Wordle's answer when you press '.'",
+	"homepage_url": "https://github.com/HidegonSan/Answordle",
+	"icons": {
+		"16": "res/icon/16x16.png",
+		"48": "res/icon/48x48.png",
+		"128": "res/icon/128x128.png"
+	},
+	"content_scripts": [{
+		"matches": ["https://www.powerlanguage.co.uk/wordle/"],
+		"js": ["src/main.js"]
+	}]
+}
